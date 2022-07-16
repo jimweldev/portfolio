@@ -1,4 +1,5 @@
 import React from 'react'
+import Project from './Project'
 import './Projects.css'
 
 const Projects = () => {
@@ -12,20 +13,12 @@ const Projects = () => {
         </div>
 
         <div className="projects_wrapper">
-          <div className="project">
-            <img src="/images/about.jpg" />
-            <p>City College of Angeles Portal</p>
-          </div>
-
-          <div className="project">
-            <img src="/images/about.jpg" />
-            <p>City College of Angeles Portal</p>
-          </div>
-
-          <div className="project">
-            <img src="/images/about.jpg" />
-            <p>City College of Angeles Portal</p>
-          </div>
+          <Project
+            title="City College of Angeles Portal"
+            image="/images/about.jpg"
+          />
+          <Project title="K&Q DIY Accessories" image="/images/about.jpg" />
+          <Project title="Paluto" image="/images/about.jpg" />
         </div>
       </div>
     </div>

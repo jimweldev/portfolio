@@ -25,38 +25,3 @@
   gap: 40px;
   flex: 3;
 }
-
-.project {
-  height: 200px;
-  text-align: center;
-
-  overflow: hidden;
-
-  background-color: var(--color-60-2);
-  border-radius: 5px;
-
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project img {
-  height: 100%;
-  object-fit: contain;
-}
-
-.project p {
-  padding: 5px 10px;
-  margin: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-
-  opacity: 0.8;
-
-  background-color: var(--color-60-1);
-  border-radius: 5px;
-
-  position: absolute;
-  bottom: 10px;
-}
