@@ -1,0 +1,46 @@
+.skills__wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills__wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.skill {
+  height: 55px;
+
+  overflow: hidden;
+
+  background-color: var(--color-60-3);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.skill__header {
+  width: 55px;
+  height: 55px;
+  color: var(--color-30);
+  text-decoration: none;
+  font-size: 35px;
+
+  background-color: var(--color-60-2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__body {
+  padding: 20px;
+}

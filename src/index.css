@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --font-family: 'Poppins', sans-serif;
+
+  --color-60-1: #262626;
+  --color-60-2: #404040;
+  --color-60-3: #595959;
+  --color-30: #ffc000;
+  --color-white-1: #ffffff;
+  --color-white-2: #f2f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-padding-top: 100px;
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font-family);
+
+  scroll-behavior: smooth;
+
+  background-color: var(--color-60-1);
+  color: var(--color-white-2);
+}
+
+img {
+  width: 100%;
+
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.container--lg {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.container--sm {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.section {
+  padding: 100px 20px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+p {
+  line-height: 2;
 }

@@ -1,0 +1,45 @@
+.about .container--sm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about__image {
+  position: relative;
+
+  flex: 1;
+}
+
+.about__image::before {
+  content: '';
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -10;
+
+  background-color: var(--color-30);
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.about__texts {
+  flex: 2;
+}
+
+.about__texts h2 {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.about__texts p {
+  text-indent: 40px;
+  text-align: justify;
+}
+
+.about__texts p:nth-of-type(1) {
+  margin-bottom: 30px;
+}
