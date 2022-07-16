@@ -4,11 +4,7 @@
 }
 
 .timeline__cards {
-  flex: 3;
-}
-
-.timeline__texts {
-  flex: 2;
+  flex: 4;
 }
 
 .timeline__cards {
@@ -82,4 +78,23 @@
 .timeline__card p:nth-of-type(3) {
   font-weight: 300;
   font-size: 16px;
+}
+
+.timeline__texts {
+  flex: 2;
+}
+
+.timeline__texts h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.timeline__texts p:nth-of-type(1) {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.timeline__texts p:nth-of-type(2) {
+  font-weight: 700;
+  text-align: right;
 }
