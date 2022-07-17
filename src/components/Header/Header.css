@@ -115,6 +115,10 @@
   position: relative;
 }
 
+.header__links a.active {
+  color: var(--color-30);
+}
+
 @media (max-width: 1100px) {
   .header {
     height: 100px;
@@ -145,7 +149,7 @@
 
   .header__links ul {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
   .header__links a {
@@ -167,10 +171,6 @@
     position: absolute;
     top: calc(100% - 1px);
     left: 0;
-  }
-
-  .header__links a.active {
-    color: var(--color-30);
   }
 
   .header__links a.active::before {

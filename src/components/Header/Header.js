@@ -1,10 +1,11 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Header.css'
 
 const Header = () => {
   const [isHeaderActive, setIsHeaderActive] = useState(false)
   const headerRef = useRef(null)
 
+  // remove body scroll when header is active
   const handleHeaderToggle = () => {
     setIsHeaderActive(!isHeaderActive)
 
@@ -15,16 +16,22 @@ const Header = () => {
     }
   }
 
+  // remove active class on header on resize
+  // change height of header depends on inner width
   window.addEventListener('resize', () => {
     setIsHeaderActive(false)
 
-    if (window.innerWidth > 1100) {
-      headerRef.current.style.height = '120px'
-    } else {
-      headerRef.current.style.height = '100px'
+    if (headerRef && headerRef.current) {
+      if (window.innerWidth > 1100) {
+        headerRef.current.style.height = '120px'
+      } else {
+        headerRef.current.style.height = '100px'
+      }
     }
   })
 
+  // change header background color when scrolled
+  // change height of header depends on inner width
   window.addEventListener('scroll', () => {
     if (headerRef && headerRef.current) {
       if (window.scrollY > 120) {
@@ -39,6 +46,11 @@ const Header = () => {
       }
     }
   })
+
+  // remove active class on header onclick
+  const handleLinkClick = () => {
+    setIsHeaderActive(false)
+  }
 
   return (
     <header
@@ -59,24 +71,34 @@ const Header = () => {
         <nav className="header__links">
           <ul>
             <li>
-              <a className="active" href="#home">
+              <a className="active" href="#home" onClick={handleLinkClick}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={handleLinkClick}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={handleLinkClick}>
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={handleLinkClick}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#timeline">Timeline</a>
+              <a href="#timeline" onClick={handleLinkClick}>
+                Timeline
+              </a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services" onClick={handleLinkClick}>
+                Services
+              </a>
             </li>
           </ul>
         </nav>

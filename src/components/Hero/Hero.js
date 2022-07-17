@@ -29,10 +29,13 @@ const Hero = () => {
           <a href="https://www.facebook.com/jimweldizon2" target="_blank">
             <BsFacebook />
           </a>
-          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/jimwel-marius-dizon-03b383225/"
+            target="_blank"
+          >
             <BsLinkedin />
           </a>
-          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
+          <a href="https://github.com/jimweldev" target="_blank">
             <BsGithub />
           </a>
         </div>
