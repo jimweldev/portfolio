@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header className="header active">
+    <header className="header">
       <div className="container--lg">
         <a href="" className="header__logo">
           <img src="/images/logo.png" alt="" />

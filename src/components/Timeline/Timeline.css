@@ -105,6 +105,14 @@
 @media (max-width: 900px) {
   .timeline .container--sm {
     flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .timeline__texts {
+    position: relative;
+    top: 0;
+
+    flex: 1;
   }
 
   .timeline__texts * {
