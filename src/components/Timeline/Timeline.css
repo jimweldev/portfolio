@@ -1,5 +1,6 @@
 .timeline .container--sm {
   display: flex;
+  align-items: flex-start;
   gap: 40px;
 }
 
@@ -81,6 +82,9 @@
 }
 
 .timeline__texts {
+  position: sticky;
+  top: calc(100px + 20px);
+
   flex: 2;
 }
 

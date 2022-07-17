@@ -27,6 +27,9 @@
 }
 
 .about__texts {
+  position: sticky;
+  top: calc(100px + 20px);
+
   flex: 2;
 }
 

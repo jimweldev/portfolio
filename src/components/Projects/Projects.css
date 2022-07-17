@@ -1,9 +1,13 @@
 .projects .container--sm {
   display: flex;
+  align-items: flex-start;
   gap: 40px;
 }
 
 .projects .container--sm > div:nth-of-type(1) {
+  position: sticky;
+  top: calc(100px + 20px);
+
   flex: 4;
 }
 
