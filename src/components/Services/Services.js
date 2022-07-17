@@ -1,5 +1,6 @@
 import React from 'react'
 import './Services.css'
+import { FaBootstrap } from 'react-icons/fa'
 
 const Services = () => {
   return (
@@ -8,11 +9,20 @@ const Services = () => {
         <h2>SERVICES</h2>
 
         <div className="services__wrapper">
-          <div className="service">Front-End Development</div>
+          <div className="service">
+            <FaBootstrap />
+            <p>Front-End Development</p>
+          </div>
 
-          <div className="service">Back-End Development</div>
+          <div className="service">
+            <FaBootstrap />
+            <p>Back-End Development</p>
+          </div>
 
-          <div className="service">Database Management</div>
+          <div className="service">
+            <FaBootstrap />
+            <p>Database Management</p>
+          </div>
         </div>
       </div>
     </div>

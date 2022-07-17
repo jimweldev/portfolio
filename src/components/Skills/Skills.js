@@ -1,7 +1,6 @@
 import React from 'react'
 import './Skills.css'
 import { FaBootstrap, FaSass } from 'react-icons/fa'
-import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
 import {
   SiFirebase,
   SiJquery,

@@ -1,0 +1,25 @@
+.services h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services__wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.services__wrapper > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.services__wrapper > div > :nth-child(1) {
+  font-size: 150px;
+  color: var(--color-60-3);
+}
+
+.services__wrapper > div > p {
+  font-weight: 300;
+}
