@@ -3,6 +3,7 @@
   height: 120px;
 
   z-index: 100;
+  transition: all 200ms ease-in-out;
 
   position: fixed;
   top: 0;
@@ -85,6 +86,8 @@
 
 .header__links {
   margin: 0 20px;
+
+  transition: all 200ms ease-in-out;
 }
 
 .header__links ul {
