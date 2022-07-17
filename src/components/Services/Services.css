@@ -16,7 +16,8 @@
 }
 
 .services__wrapper > div > :nth-child(1) {
-  font-size: 150px;
+  margin-bottom: 20px;
+  font-size: 140px;
   color: var(--color-60-3);
 }
 

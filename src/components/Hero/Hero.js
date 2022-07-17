@@ -3,11 +3,22 @@ import './Hero.css'
 import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
 
 const Hero = () => {
+  const hours = new Date().getHours()
+  let greetings
+
+  if (hours < 12) {
+    greetings = 'Good Morning!'
+  } else if (hours < 18) {
+    greetings = 'Good Afternoon!'
+  } else {
+    greetings = 'Good Evening!'
+  }
+
   return (
     <div className="hero section" id="home">
       <div className="container">
         <div className="hero__texts">
-          <p>Good Morning!</p>
+          <p>{greetings}</p>
           <h1>
             I'm <span>Jimwel Dizon</span>
           </h1>

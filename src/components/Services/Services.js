@@ -1,6 +1,6 @@
 import React from 'react'
 import './Services.css'
-import { FaBootstrap } from 'react-icons/fa'
+import { FaCode, FaDatabase, FaPaintRoller } from 'react-icons/fa'
 
 const Services = () => {
   return (
@@ -10,17 +10,17 @@ const Services = () => {
 
         <div className="services__wrapper">
           <div className="service">
-            <FaBootstrap />
+            <FaPaintRoller />
             <p>Front-End Development</p>
           </div>
 
           <div className="service">
-            <FaBootstrap />
+            <FaCode />
             <p>Back-End Development</p>
           </div>
 
           <div className="service">
-            <FaBootstrap />
+            <FaDatabase />
             <p>Database Management</p>
           </div>
         </div>
