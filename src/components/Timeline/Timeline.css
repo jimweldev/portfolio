@@ -97,3 +97,13 @@
 .timeline__texts p:nth-of-type(2) {
   text-align: right;
 }
+
+@media (max-width: 900px) {
+  .timeline .container--sm {
+    flex-direction: column-reverse;
+  }
+
+  .timeline__texts * {
+    text-align: center !important;
+  }
+}

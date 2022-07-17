@@ -44,3 +44,16 @@
 .skill__body {
   padding: 20px;
 }
+
+@media (max-width: 850px) {
+  .skills__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skill {
+    width: 250px;
+    max-width: 250px;
+  }
+}

@@ -43,3 +43,13 @@
 .about__texts p:nth-of-type(1) {
   margin-bottom: 30px;
 }
+
+@media (max-width: 900px) {
+  .about h2 {
+    text-align: center;
+  }
+
+  .about__image {
+    display: none;
+  }
+}

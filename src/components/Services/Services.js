@@ -4,9 +4,9 @@ import { FaBootstrap } from 'react-icons/fa'
 
 const Services = () => {
   return (
-    <div className="services section">
+    <div className="services section" id="services">
       <div className="container--sm">
-        <h2>SERVICES</h2>
+        <h2>WHAT I DO</h2>
 
         <div className="services__wrapper">
           <div className="service">

@@ -4,7 +4,7 @@ import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
 
 const Hero = () => {
   return (
-    <div className="hero section">
+    <div className="hero section" id="home">
       <div className="container">
         <div className="hero__texts">
           <p>Good Morning!</p>
@@ -15,13 +15,13 @@ const Hero = () => {
         </div>
 
         <div className="hero__social-medias">
-          <a href="">
+          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
             <BsFacebook />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
             <BsLinkedin />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
             <BsGithub />
           </a>
         </div>

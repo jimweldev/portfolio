@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.projects p {
+.projects p:nth-of-type(1) {
   margin-bottom: 30px;
 }
 
@@ -24,4 +24,16 @@
   flex-direction: column;
   gap: 40px;
   flex: 3;
+}
+
+@media (max-width: 900px) {
+  .projects .container--sm {
+    flex-direction: column;
+  }
+
+  .projects h2,
+  .projects p,
+  .projects a {
+    text-align: center !important;
+  }
 }

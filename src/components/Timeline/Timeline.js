@@ -3,7 +3,7 @@ import './Timeline.css'
 
 const Timeline = () => {
   return (
-    <div className="timeline section">
+    <div className="timeline section" id="timeline">
       <div className="container--sm">
         <div className="timeline__cards">
           <div className="timeline__line"></div>

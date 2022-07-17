@@ -3,33 +3,39 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header active">
       <div className="container--lg">
-        <a href="#" className="header__logo">
+        <a href="" className="header__logo">
           <img src="/images/logo.png" alt="" />
         </a>
+
+        <div className="header__menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
         <nav className="header__links">
           <ul>
             <li>
-              <a className="active" href="#">
+              <a className="active" href="#home">
                 Home
               </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Timeline</a>
+              <a href="#timeline">Timeline</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
           </ul>
         </nav>

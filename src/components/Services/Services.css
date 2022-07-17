@@ -23,3 +23,9 @@
 .services__wrapper > div > p {
   font-weight: 300;
 }
+
+@media (max-width: 900px) {
+  .services__wrapper {
+    flex-direction: column;
+  }
+}

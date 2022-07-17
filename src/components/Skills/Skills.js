@@ -12,7 +12,7 @@ import { GrMysql, GrReactjs } from 'react-icons/gr'
 
 const Skills = () => {
   return (
-    <div className="skills section">
+    <div className="skills section" id="skills">
       <div className="container--sm">
         <h2>SKILLS</h2>
 

@@ -18,14 +18,14 @@
 }
 
 html {
-  scroll-padding-top: 100px;
   font-size: 18px;
+
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-family);
-
-  scroll-behavior: smooth;
 
   background-color: var(--color-60-1);
   color: var(--color-white-2);

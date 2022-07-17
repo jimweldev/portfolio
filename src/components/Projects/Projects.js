@@ -4,12 +4,14 @@ import './Projects.css'
 
 const Projects = () => {
   return (
-    <div className="projects section">
+    <div className="projects section" id="projects">
       <div className="container--sm">
         <div>
           <h2>PROJECTS</h2>
           <p>These Projects are the best projects that I made so far.</p>
-          <a href="">GitHub</a>
+          <p>
+            <a href="">GitHub</a>
+          </p>
         </div>
 
         <div className="projects_wrapper">
