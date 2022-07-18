@@ -86,6 +86,6 @@ p {
 
 @media (max-width: 1100px) {
   .section {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
