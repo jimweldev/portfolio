@@ -1,6 +1,7 @@
 import React from 'react'
-import './Hero.css'
+import { motion } from 'framer-motion'
 import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
+import './Hero.css'
 
 const Hero = () => {
   const hours = new Date().getHours()
@@ -26,18 +27,45 @@ const Hero = () => {
         </div>
 
         <div className="hero__social-medias">
-          <a href="https://www.facebook.com/jimweldizon2" target="_blank">
+          <motion.a
+            href="https://www.facebook.com/jimweldizon2"
+            target="_blank"
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileTap={{
+              scale: 0.8,
+              rotate: -360,
+              borderRadius: '100%',
+            }}
+            transition={{ duration: 0.3 }}
+          >
             <BsFacebook />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/jimwel-marius-dizon-03b383225/"
             target="_blank"
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileTap={{
+              scale: 0.8,
+              rotate: -360,
+              borderRadius: '100%',
+            }}
+            transition={{ duration: 0.3 }}
           >
             <BsLinkedin />
-          </a>
-          <a href="https://github.com/jimweldev" target="_blank">
+          </motion.a>
+          <motion.a
+            href="https://github.com/jimweldev"
+            target="_blank"
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileTap={{
+              scale: 0.8,
+              rotate: -360,
+              borderRadius: '100%',
+            }}
+            transition={{ duration: 0.3 }}
+          >
             <BsGithub />
-          </a>
+          </motion.a>
         </div>
 
         <div className="hero__image">

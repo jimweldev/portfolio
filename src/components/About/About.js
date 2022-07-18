@@ -1,13 +1,19 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './About.css'
 
 const About = () => {
   return (
     <div className="about section" id="about">
       <div className="container--sm">
-        <div className="about__image">
+        <motion.div
+          className="about__image"
+          initial={{ x: '100%' }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <img src="/images/about.jpg" alt="" />
-        </div>
+        </motion.div>
 
         <div className="about__texts">
           <h2>WHO I AM</h2>

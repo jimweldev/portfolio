@@ -26,6 +26,8 @@ html {
 body {
   font-family: var(--font-family);
 
+  overflow-x: hidden;
+
   background-color: var(--color-60-1);
   color: var(--color-white-2);
 }

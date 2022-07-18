@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+import { motion } from 'framer-motion'
 import { FaBootstrap, FaSass } from 'react-icons/fa'
 import {
   SiFirebase,
@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
 } from 'react-icons/si'
 import { GrMysql, GrReactjs } from 'react-icons/gr'
+import './Skills.css'
 
 const Skills = () => {
   return (
@@ -18,72 +19,117 @@ const Skills = () => {
 
         <div className="skills__wrapper">
           <div>
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '-100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <SiPhp />
               </div>
               <div className="skill__body">PHP</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '-100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <SiJquery />
               </div>
               <div className="skill__body">JQuery</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '-100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <GrMysql />
               </div>
               <div className="skill__body">MySQL</div>
-            </div>
+            </motion.div>
           </div>
 
           <div>
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <GrReactjs />
               </div>
               <div className="skill__body">React JS</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <SiNextdotjs />
               </div>
               <div className="skill__body">Next JS</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <SiFirebase />
               </div>
               <div className="skill__body">Firebase</div>
-            </div>
+            </motion.div>
           </div>
 
           <div>
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <FaBootstrap />
               </div>
               <div className="skill__body">Bootstrap</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <SiTailwindcss />
               </div>
               <div className="skill__body">Tailwind</div>
-            </div>
+            </motion.div>
 
-            <div className="skill">
+            <motion.div
+              className="skill"
+              initial={{ x: '100%' }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            >
               <div className="skill__header">
                 <FaSass />
               </div>
               <div className="skill__body">Sass</div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

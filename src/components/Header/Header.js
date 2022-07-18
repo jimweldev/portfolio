@@ -22,6 +22,8 @@ const Header = () => {
   window.addEventListener('resize', () => {
     setIsHeaderActive(false)
 
+    document.body.style.overflowY = 'scroll'
+
     if (headerRef && headerRef.current) {
       if (window.innerWidth > 1100) {
         headerRef.current.style.height = '120px'

@@ -1,5 +1,6 @@
 import React from 'react'
 import Project from './Project'
+import { motion } from 'framer-motion'
 import './Projects.css'
 
 const Projects = () => {
@@ -10,7 +11,7 @@ const Projects = () => {
           <h2>PROJECTS</h2>
           <p>These Projects are the best projects that I made so far.</p>
           <p>
-            <a href="">GitHub</a>
+            <a href="https://github.com/jimweldev">GitHub</a>
           </p>
         </div>
 
