@@ -55,6 +55,8 @@ img {
 
 .section {
   padding: 100px 20px;
+
+  overflow-x: hidden;
 }
 
 h1,
