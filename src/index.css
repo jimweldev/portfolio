@@ -58,8 +58,6 @@ img {
 
 .section {
   padding: 100px 20px;
-
-  overflow-x: hidden;
 }
 
 h1,
@@ -84,4 +82,10 @@ h3 {
 p {
   line-height: 2;
   font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+  .section {
+    overflow-x: hidden;
+  }
 }
