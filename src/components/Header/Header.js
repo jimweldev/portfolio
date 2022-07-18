@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-scroll'
 import './Header.css'
 
 const Header = () => {
@@ -34,7 +35,7 @@ const Header = () => {
   // change height of header depends on inner width
   window.addEventListener('scroll', () => {
     if (headerRef && headerRef.current) {
-      if (window.scrollY > 120) {
+      if (window.scrollY > 200) {
         headerRef.current.style.backgroundColor = '#262626'
         headerRef.current.style.height = '100px'
       } else {
@@ -71,34 +72,70 @@ const Header = () => {
         <nav className="header__links">
           <ul>
             <li>
-              <a className="active" href="#home" onClick={handleLinkClick}>
+              <Link
+                to="home"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={handleLinkClick}>
+              <Link
+                to="about"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#skills" onClick={handleLinkClick}>
+              <Link
+                to="skills"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" onClick={handleLinkClick}>
+              <Link
+                to="projects"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#timeline" onClick={handleLinkClick}>
+              <Link
+                to="timeline"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 Timeline
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" onClick={handleLinkClick}>
+              <Link
+                to="services"
+                spy={true}
+                offset={-100}
+                duration={500}
+                onClick={handleLinkClick}
+              >
                 Services
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -107,6 +107,7 @@
   font-size: 18px;
   font-weight: 300;
 
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -136,7 +137,7 @@
     transform: translateX(-100%);
     z-index: -10;
 
-    background-color: var(--color-60-2);
+    background-color: var(--color-60-1);
 
     position: absolute;
     top: 0;
