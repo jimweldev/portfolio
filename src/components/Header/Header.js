@@ -52,6 +52,8 @@ const Header = () => {
 
   // remove active class on header onclick
   const handleLinkClick = () => {
+    document.body.style.overflowY = 'scroll'
+
     setIsHeaderActive(false)
   }
 
