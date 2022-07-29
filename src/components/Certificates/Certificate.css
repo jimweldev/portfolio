@@ -1,0 +1,17 @@
+.certificate {
+  aspect-ratio: 6/4;
+
+  background-color: var(--color-60-2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate img {
+  max-width: 100%;
+  max-height: 100%;
+
+  cursor: pointer;
+  object-fit: cover;
+}

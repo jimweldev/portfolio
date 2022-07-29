@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
+import { FaCertificate } from 'react-icons/fa'
 import './Hero.css'
 
 const Hero = () => {
@@ -65,6 +66,19 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             <BsGithub />
+          </motion.a>
+          <motion.a
+            href="/certificates"
+            target="_blank"
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileTap={{
+              scale: 0.8,
+              rotate: -360,
+              borderRadius: '100%',
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            <FaCertificate />
           </motion.a>
         </div>
 
