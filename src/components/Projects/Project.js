@@ -9,6 +9,7 @@ const Project = ({ title, image, link }) => {
       href={link}
       initial={{ x: '-100%' }}
       whileInView={{ x: 0 }}
+      transition={{ duration: 0.4 }}
       target="_blank"
     >
       <img src={image} />

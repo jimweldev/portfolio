@@ -10,32 +10,41 @@ const Services = () => {
         <h2>WHAT I DO</h2>
 
         <div className="services__wrapper">
-          <motion.div
-            className="service"
-            whileInView={{ rotate: 360 }}
-            transition={{ duration: 0.3 }}
-          >
-            <FaPaintRoller />
+          <div>
+            <motion.div
+              className="service"
+              whileInView={{ rotate: 360 }}
+              transition={{ duration: 0.4 }}
+            >
+              <FaPaintRoller />
+            </motion.div>
+
             <p>Front-End Development</p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="service"
-            whileInView={{ rotate: 720 }}
-            transition={{ duration: 0.6 }}
-          >
-            <FaCode />
+          <div>
+            <motion.div
+              className="service"
+              whileInView={{ rotate: -720 }}
+              transition={{ duration: 0.8 }}
+            >
+              <FaCode />
+            </motion.div>
+
             <p>Back-End Development</p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="service"
-            whileInView={{ rotate: -360 }}
-            transition={{ duration: 0.3 }}
-          >
-            <FaDatabase />
+          <div>
+            <motion.div
+              className="service"
+              whileInView={{ rotate: 360 }}
+              transition={{ duration: 0.4 }}
+            >
+              <FaDatabase />
+            </motion.div>
+
             <p>Database Management</p>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

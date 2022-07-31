@@ -15,7 +15,7 @@
   flex: 1;
 }
 
-.services__wrapper > div > :nth-child(1) {
+.services__wrapper > div > div > :nth-child(1) {
   margin-bottom: 20px;
   font-size: 140px;
   color: var(--color-60-3);
