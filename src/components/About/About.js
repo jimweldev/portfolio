@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 import './About.css'
 
 const About = () => {
+	const age = Math.floor(
+		(new Date() - new Date('1999-09-18').getTime()) / 3.15576e10
+	)
+
 	return (
 		<div className="about section" id="about">
 			<div className="container--sm">
@@ -18,7 +22,7 @@ const About = () => {
 				<div className="about__texts">
 					<h2>WHO I AM</h2>
 					<p>
-						My name is Jimwel Dizon. I am 22 years old from Angeles City,
+						My name is Jimwel Dizon. I am {age} years old from Angeles City,
 						Pampanga. I have been living with my parents and two siblings. I
 						have completed my Bachelor of Science in Information Systems degree
 						from City College of Angeles.
