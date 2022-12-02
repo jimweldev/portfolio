@@ -29,7 +29,7 @@ const Hero = () => {
 
 				<div className="hero__social-medias">
 					<motion.a
-						href="https://www.facebook.com/jimweldizon2"
+						href="https://www.facebook.com/yato.rend18"
 						target="_blank"
 						whileHover={{ scale: 1.2, rotate: 360 }}
 						whileTap={{
